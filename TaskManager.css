@@ -1,0 +1,112 @@
+/* Overall Task Manager Container */
+.task-manager {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #eaf0e4; /* Farm-like color */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Title Style */
+  .task-manager-title {
+    text-align: center;
+    color: #3e7b43; /* Earthy green color */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  /* Description */
+  .task-manager-description {
+    text-align: center;
+    font-size: 1.2em;
+    color: #4a4a4a;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+  
+  /* Task List */
+  .task-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .task-item {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1.1em;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .task-item:hover {
+    background-color: #d7f7db;
+    cursor: pointer;
+    transform: translateY(-5px); /* Slight lift effect */
+  }
+  
+  /* Input & Button */
+  .task-input {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+  }
+  
+  .task-input input {
+    width: 80%;
+    padding: 12px;
+    font-size: 1.1em;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-right: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .task-input button {
+    padding: 12px 15px;
+    background-color: #6dbf50; /* Farm green */
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .task-input button:hover {
+    background-color: #56a943; /* Darker green */
+  }
+  
+  .task-input button:disabled {
+    background-color: #b0d0d3;
+    cursor: not-allowed;
+  }
+  
+  /* General Responsiveness */
+  @media (max-width: 768px) {
+    .task-manager {
+      padding: 20px;
+    }
+    
+    .task-manager-title {
+      font-size: 2em;
+    }
+  
+    .task-input input {
+      width: 70%;
+    }
+  
+    .task-input button {
+      width: 25%;
+    }
+  }
+  

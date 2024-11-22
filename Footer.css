@@ -1,0 +1,46 @@
+.features {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  
+  .feature-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .feature-image img {
+    width: 100%;
+    height: auto;
+    max-width: 500px; /* Ensure images do not overflow */
+  }
+  
+  .feature-text {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .feature-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .feature-text p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .feature-section {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .feature-image img {
+      width: 100%; /* Responsive width for smaller screens */
+    }
+  }
+  

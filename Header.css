@@ -1,0 +1,96 @@
+/* Header container */
+.header {
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center; /* Center items vertically */
+    padding: 1rem 2rem; /* Padding for spacing */
+    background-color: #765555; /* Background color */
+    color: #4CAF50; /* Text color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+/* Styling for the logo */
+.logo-link {
+    text-decoration: none; /* No underline */
+    color: #4CAF50; /* Logo text color */
+    display: flex; /* Ensure logo stays aligned */
+    align-items: center; /* Align vertically */
+}
+
+.logo h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.8rem; /* Font size */
+}
+
+/* Navigation menu styles */
+.nav-list {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Horizontal layout */
+    gap: 2rem; /* Space between links */
+    margin: 0; /* Remove margin */
+}
+
+.nav-list li {
+    display: inline; /* Inline items */
+}
+
+/* Link styles */
+.nav-list a {
+    color: #4CAF50; /* Link color */
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Make links bold */
+    transition: color 0.3s; /* Smooth transition on hover */
+}
+
+/* Hover effect for links */
+.nav-list a:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
+/* CTA button styles */
+.cta {
+    background-color: #195ec7; /* Button background */
+    color: white; /* Text color */
+    border: none; /* No border */
+    padding: 0.5rem 1.5rem; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Hover effect for CTA button */
+.cta:hover {
+    background-color: #45a049; /* Dark green on hover */
+}
+
+/* Sign In button styles */
+.signin {
+    background-color: #4CAF50; /* Button background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    padding: 0.5rem 1.5rem; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Hover effect for Sign In button */
+.signin:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+}
+
+/* Responsive design: Adjust navigation for smaller screens */
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column; /* Stack items vertically */
+        gap: 1rem; /* Reduce gap */
+    }
+
+    .cta {
+        padding: 0.4rem 1rem; /* Adjust button size */
+    }
+
+    .signin {
+        padding: 0.4rem 1rem; /* Adjust Sign In button size */
+    }
+}
